@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background: rgb(233, 236, 239);
+}
+
+
+#about,
+#rooms,
+#services,
+#gallery {
+    margin: 120px 0;
+}
+
+/* ------------------------------------CUSTOM STYLES---------------------------------- */
+.custom-btn {
+    color: #af8564;
+    border: 2px solid #af8564;
+}
+
+.custom-btn:hover {
+    background-color: #af8564;
+    color: #ffffff;
+}
+
+.text-custom {
+    color: #af8564;
+}
+
+.bg-custom {
+    background-color: #af8564;
+}
+
+.text-smooth {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.border-custom {
+    border: 2px solid #af8564;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 10px 5px rgba(175, 133, 100, 0.3);
+}
+
+.ls {
+    letter-spacing: 3px;
+}
+
+.fs-small {
+    font-size: 12px;
+}
+
+.about {
+    background-color: #ffffff;
+}
+
+
+
+/* -------------------------------------------nav-------------------------------- */
+
+.logo {
+    font-size: 2.5rem;
+    margin-top: 5px;
+    color: #af8564;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    width: 100%;
+    height: 120px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #af8564;
+}
+
+/* ---------------------------------HERO SECTION--------------------------- */
+
+.hero-info {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.hero, .carousel, .carousel-item{
+    height: 100vh;
+    position: relative;
+}
+
+.hero-texts{
+    margin-top: 100px;
+}
+
+/* ----------------------------------ABOUT SECTION---------------------- */
+
+.material-icons {
+    font-size: 3rem;
+    color: #af8564;
+    border: 1px solid #af8564;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.material-icons:hover {
+    background: #af8564;
+    color: #ffffff;
+}
+
+/* ---------------ROOMS SECTION----------------------------- */
+
+.room-content {
+    background-color: rgb(33, 37, 41);
+    color: #ffffff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transform: translateY(-20%);
+}
+
+/* -------------------------FACILTIES SECTION------------------------ */
+
+.service {
+    background-color: rgb(33, 37, 41);
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.service:hover {
+    background-color: #af8564;
+    transform: translateY(-30px);
+}
+
+.service-icons {
+    font-size: 4.5rem;
+}
+
+/* -----------------------------GALLERY SECTION-------------------------- */
+
+.gallery-border {
+    border: 2px solid white;
+}
+
+
+.gallery-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    outline: none;
+}
+
+.gallery-img:hover img {
+    transform: scale(1.1);
+    filter: blur(0.5px);
+}
+
+.view-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.gallery-img:hover .view-icon{
+    opacity: 1;
+}
+
+/* -------------------------------------MEDIA QUERIES----------------------------- */
+
+@media (max-width: 900px) {
+
+   .nav-icon {
+        display: block;
+        font-size: 35px;
+        color: #af8564;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #sidemenu {
+        background: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        display: block;
+        top: 0;
+        right: -230px;
+        width: 230px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li  {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a{
+        color: #af8564;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    nav ul .nav-icon {
+        position: absolute;
+        top: -2px;
+        left: -8px;
+        cursor: pointer;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transform: translateY(0);
+    }
+}
