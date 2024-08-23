@@ -107,6 +107,10 @@ nav ul li a:hover {
     color: #af8564;
 }
 
+.nav-icon{
+    display: none;
+}
+
 /* ---------------------------------HERO SECTION--------------------------- */
 
 .hero-info {
@@ -125,6 +129,10 @@ nav ul li a:hover {
     margin-top: 100px;
 }
 
+.hero-carousel-btn{
+transform: translateY(0) !important;
+z-index: 5;
+}
 /* ----------------------------------ABOUT SECTION---------------------- */
 
 .material-icons {
@@ -150,6 +158,20 @@ nav ul li a:hover {
 .carousel-control-prev,
 .carousel-control-next {
     transform: translateY(-20%);
+}
+
+.slider-next{
+right: -70%;
+position: relative;
+}
+
+.slider-prev{
+left: -70%;
+position: relative;
+}
+
+.rooms .carousel-control-next-icon,.rooms .carousel-control-prev-icon{
+    filter: invert(100%);
 }
 
 /* -------------------------FACILTIES SECTION------------------------ */
