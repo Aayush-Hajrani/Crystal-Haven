@@ -9,6 +9,10 @@ body {
     background: rgb(233, 236, 239);
 }
 
+button {
+    cursor: pointer;
+}
+
 
 #about,
 #rooms,
@@ -88,6 +92,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 26px;
 }
 
@@ -99,15 +104,48 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.login {
+    color: #fff;
+    text-decoration: none;
     font-size: 1.1rem;
     position: relative;
+    background-color: transparent;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+.login:hover {
+    color: #af8564;
+    border: 1px solid #af8564;
+}
+
+.sign-up {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    background-color: transparent;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.sign-up:hover {
+    color: #af8564;
+    border: 1px solid #af8564;
 }
 
 nav ul li a:hover {
     color: #af8564;
 }
 
-.nav-icon{
+.nav-icon {
     display: none;
 }
 
@@ -120,19 +158,22 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.hero, .carousel, .carousel-item{
+.hero,
+.hero-carousel,
+.hero-carousel-item {
     height: 100vh;
     position: relative;
 }
 
-.hero-texts{
+.hero-texts {
     margin-top: 100px;
 }
 
-.hero-carousel-btn{
-transform: translateY(0) !important;
-z-index: 5;
+.hero-carousel-btn {
+    transform: translateY(0) !important;
+    z-index: 5;
 }
+
 /* ----------------------------------ABOUT SECTION---------------------- */
 
 .material-icons {
@@ -150,6 +191,10 @@ z-index: 5;
 
 /* ---------------ROOMS SECTION----------------------------- */
 
+/* .carousel,.carousel-item{
+    min-height: 100vh;
+} */
+
 .room-content {
     background-color: rgb(33, 37, 41);
     color: #ffffff;
@@ -160,17 +205,18 @@ z-index: 5;
     transform: translateY(-20%);
 }
 
-.slider-next{
-right: -70%;
-position: relative;
+.slider-next {
+    right: -70%;
+    position: relative;
 }
 
-.slider-prev{
-left: -70%;
-position: relative;
+.slider-prev {
+    left: -70%;
+    position: relative;
 }
 
-.rooms .carousel-control-next-icon,.rooms .carousel-control-prev-icon{
+.rooms .carousel-control-next-icon,
+.rooms .carousel-control-prev-icon {
     filter: invert(100%);
 }
 
@@ -235,15 +281,106 @@ position: relative;
     transition: 0.3s ease;
 }
 
-.gallery-img:hover .view-icon{
+.gallery-img:hover .view-icon {
     opacity: 1;
 }
+
+/* ------------------------------FOOTER------------------------------- */
+
+.footer-card {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 25px;
+}
+
+.social-icons {
+    margin-right: 15px;
+    font-size: 1.9rem;
+}
+
+.social-icons:hover {
+    color: #af8564;
+}
+
+.mid-margin {
+    margin-left: 90px;
+}
+
+
+
+/* -----------------------------LOGIN--------------------------------- */
+
+.login-bg {
+    min-height: 100vh;
+    background-color: #d2a76b;
+    padding: 50px 0;
+    margin: auto;
+}
+
+.login-image {
+    background-image: url(images/login.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay-text {
+    text-shadow: 4px 4px 20px rgba(0, 0, 0);
+}
+
+form {
+    font-family: 'Poppins';
+}
+
+.form-bg {
+    background-color: rgb(33, 37, 41);
+    color: #ffffff;
+}
+
+.form-label {
+    font-size: 1.2rem;
+}
+
+.login-btn {
+    background-color: #d2a76b;
+    color: #ffffff;
+
+    border-radius: 10px;
+}
+
+.login-btn:hover {
+    background-color: #ffffff;
+    color: #d2a76b;
+}
+
+.form-bg input:focus {
+    border-color: rgb(210, 167, 107);
+    box-shadow: 0 0 0 0.2rem rgb(210, 167, 107, 0.5);
+}
+
+.form-bg a {
+    text-decoration: none;
+    color: #d2a76b;
+}
+
+.row-border {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
 
 /* -------------------------------------MEDIA QUERIES----------------------------- */
 
 @media (max-width: 900px) {
 
-   .nav-icon {
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .nav-icon {
         display: block;
         font-size: 35px;
         color: #af8564;
@@ -264,12 +401,12 @@ position: relative;
         transition: right 0.5s;
     }
 
-    nav ul li  {
+    nav ul li {
         display: block;
         margin: 25px;
     }
 
-    nav ul li a{
+    nav ul li a {
         color: #af8564;
         font-weight: bold;
         font-size: 1.3rem;
@@ -282,8 +419,34 @@ position: relative;
         cursor: pointer;
     }
 
+    .login {
+        margin-left: 0;
+    }
+
     .carousel-control-prev,
     .carousel-control-next {
         transform: translateY(0);
+    }
+
+    .mid-footer {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: start !important;
+    }
+
+    .mid-margin {
+        margin-left: 0;
+    }
+
+    .right-col {
+        display: flex;
+        align-items: start !important;
+    }
+
+    .social-icons {
+        margin-right: 5px;
+        font-size: 1.4rem;
+
     }
 }

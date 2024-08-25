@@ -13,7 +13,7 @@
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-      
+          <script src="https://kit.fontawesome.com/63206585b7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
       </head>
 
@@ -21,11 +21,13 @@
         <nav>
           <div class="logo fs-1">Crystal Haven</div>
           <ul id="sidemenu">
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="rooms.html">Rooms</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="login.html"> <button class="login fs-5"> Login</button></a></li>
+            <li><a href="sign-up.html"> <button class="sign-up fs-5"> Sign In</button></a></li>
             <span class="material-symbols-outlined nav-icon" onclick="closemenu()">close</span>
           </ul>
           <span class="material-symbols-outlined nav-icon" onclick="openmenu()">menu</span>
@@ -34,8 +36,8 @@
 
       <section id="hero">
         <div class="hero">
-            <div id="carouselExampleInterval" class="carousel slide position-relative z-1 min-vh-100" data-bs-ride="carousel">
-              <div
+          <div id="carouselExampleInterval" class="carousel slide hero-carousel z-1" data-bs-ride="carousel">
+            <div
               class="position-absolute end-0 start-0 top-0 bottom-0 z-3 h-100 w-80 d-flex align-items-center           justify-content-center px-3 hero-texts">
               <div class="container">
                 <div class="row justify-content-center">
@@ -49,29 +51,29 @@
                 </div>
               </div>
             </div>
-              <div class="carousel-inner min-vh-100">
-                <div class="carousel-item active" data-bs-interval="3000">
-                  <img src="images/standard.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img src="images/superior.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/family.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
-                </div>
+            <div class="carousel-inner">
+              <div class="carousel-item hero-carousel-item active" data-bs-interval="3000">
+                <img src="images/standard.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
               </div>
-              <button class="carousel-control-prev hero-carousel-btn" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next hero-carousel-btn" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="carousel-item hero-carousel-item" data-bs-interval="3000">
+                <img src="images/superior.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+              </div>
+              <div class="carousel-item hero-carousel-item" data-bs-interval="3000">
+                <img src="images/family.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+              </div>
             </div>
+            <button class="carousel-control-prev hero-carousel-btn" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next hero-carousel-btn" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+        </div>
       </section>
 
       <section id="services">
@@ -140,6 +142,44 @@
         </div>
         </div>
       </section>
+
+      <footer>
+        <div class="container-fluid p-0 mt-5">
+          <div class="footer-card">
+            <h2 class="fs-1 text-uppercase text-custom text-center">crystal haven</h2>
+    
+            <div class="row g-0 mt-3 d-flex align-items-start justify-content-around p-3 mid-footer ">
+    
+              <div class="col-12 col-lg-4">
+                <p>Discover the perfect blend of sophistication and warmth at Crystal Haven. Our hotel is designed to provide you with a haven of tranquility amidst the bustling city. From our spacious rooms to our attentive service, every detail is crafted to ensure your utmost comfort and satisfaction.</p>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="mid-margin">
+                <p class="fs-5 d-flex align-items-start"><span class="material-symbols-outlined fs-3 me-1">call</span>+91 1234567890 </p>
+                <p class="fs-5 d-flex align-items-start"><span class="material-symbols-outlined fs-3 me-1">mail</span> crystalhaven@work.in</p>
+                <p class="fs-5 d-flex align-items-start"><span class="material-symbols-outlined fs-3 me-1">location_on</span>1973 west 21th street,Ahmedabad
+                </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="d-flex flex-column align-items-center right-col">
+                  <div class="fs-2 text-uppercase">connect to us</div>
+                  <div class="d-flex align-items-center text-center mt-2">
+                    <i class="fa-brands fa-instagram social-icons"></i>
+                    <i class="fa-brands fa-facebook social-icons"></i>
+                    <i class="fa-brands fa-youtube social-icons"></i>
+                    <i class="fa-brands fa-x-twitter social-icons"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <p class="text-center text-capitalize text-custom fs-5 mt-3"><i class="fa-regular fa-copyright me-2"></i>crystal haven and all
+              rights reserved</p>
+          </div>
+        </div>
+        </div>
+      </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
