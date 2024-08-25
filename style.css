@@ -447,6 +447,25 @@ form {
     .social-icons {
         margin-right: 5px;
         font-size: 1.4rem;
+    }
 
+    .login{
+        color: #af8564;
+        border: 1px solid #af8564;
+    }
+
+    .login:hover{
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+
+    .sign-up{
+        color: #af8564;
+        border: 1px solid #af8564;
+    }
+
+    .sign-up:hover{
+        color: #ffffff;
+        border: 1px solid #ffffff;
     }
 }
