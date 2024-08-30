@@ -169,6 +169,21 @@ nav ul li a:hover {
     margin-top: 100px;
 }
 
+.breadcrumb{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #af8564;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #af8564;
+}
+
 .hero-carousel-btn {
     transform: translateY(0) !important;
     z-index: 5;
